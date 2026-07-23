@@ -1,0 +1,23 @@
+{
+  "name": "keylaunch",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Plataforma comunitaria de distribución de builds con claves revocables",
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace=@keylaunch/web-creator",
+    "dev:launcher": "npm run tauri dev --workspace=@keylaunch/launcher",
+    "build:web": "npm run build --workspace=@keylaunch/web-creator",
+    "build:launcher": "npm run tauri build --workspace=@keylaunch/launcher",
+    "build:shared": "npm run build --workspace=@keylaunch/shared",
+    "lint": "npm run lint --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

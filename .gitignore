@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.next/
+out/
+.turbo/
+*.local
+.env
+.env.*.local
+!.env.example
+target/
+apps/launcher/src-tauri/target/
+*.log
+.DS_Store
+Thumbs.db
+.supabase/
