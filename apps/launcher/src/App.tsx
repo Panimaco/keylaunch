@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import { getLibrary, type LibraryItem } from '../lib/api';
-import { getDeviceInfo, getSavedActivations } from '../lib/tauri';
-import type { DeviceInfo } from '../lib/tauri';
-import { ActivateView } from './ActivateView';
-import { ProjectPanel } from './ProjectPanel';
+import { getLibrary, type LibraryItem } from './lib/api';
+import { getDeviceInfo, getSavedActivations } from './lib/tauri';
+import type { DeviceInfo } from './lib/tauri';
+import { ActivateView } from './components/ActivateView';
+import { ProjectPanel } from './components/ProjectPanel';
 
 type View = 'library' | 'activate';
 
